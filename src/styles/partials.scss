@@ -1,0 +1,30 @@
+//COLORS
+$color-dixa-blue: #5A43E0;
+$color-dixa-very-blue: #4231A3;
+$color-dixa-grey: #DBD5E8;
+$color-dixa-black: #191919;
+$color-dixa-salmon: #FB9F9F;
+
+//GRADIENTS
+$gradient-dixa-main: linear-gradient(45deg, #4398FF , #7A38FF);
+
+//FONTS
+$font-primary: 'Open Sans', sans-serif;
+$font-headers: 'Montserrat', sans-serif;
+$font-long-texts: 'Vollkorn', serif;
+
+.icon-big {
+  width: 100px;
+  height: auto;
+}
+
+//BUTTONS
+.btn {
+  color: white;
+  background: $gradient-dixa-main;
+  border-radius: 20px;
+  padding: 5px 25px 5px 25px;
+  :hover {
+    color: white;
+  }
+}
