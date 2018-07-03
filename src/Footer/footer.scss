@@ -1,0 +1,12 @@
+.footer {
+  height: 300px;
+  transform: translateY(130px);
+  background: $gradient-dixa-main;
+  padding-top: 30px;
+  .footer-items {
+    display: flex;
+    .footer-item {
+      flex: 1;
+    }
+  }
+}

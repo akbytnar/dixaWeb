@@ -1,44 +1,111 @@
 .icon-big {
-  width: 100px;
+  width: 80px;
   height: auto; }
 
 .btn {
-  color: white;
-  background: linear-gradient(45deg, #4398FF, #7A38FF);
   border-radius: 20px;
-  padding: 5px 25px 5px 25px; }
-  .btn :hover {
+  padding: 7px 27px 7px 27px; }
+
+.btn-main {
+  color: white;
+  background: linear-gradient(45deg, #4398FF, #7A38FF); }
+  .btn-main:hover {
     color: white; }
+
+.btn-secondary {
+  color: #5A43E0;
+  border: 2px solid #5A43E0;
+  background-color: white;
+  font-weight: bold; }
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #4231A3; }
+
+.description {
+  font-size: 16px; }
 
 .icon-big {
-  width: 100px;
+  width: 80px;
   height: auto; }
 
 .btn {
-  color: white;
-  background: linear-gradient(45deg, #4398FF, #7A38FF);
   border-radius: 20px;
-  padding: 5px 25px 5px 25px; }
-  .btn :hover {
+  padding: 7px 27px 7px 27px; }
+
+.btn-main {
+  color: white;
+  background: linear-gradient(45deg, #4398FF, #7A38FF); }
+  .btn-main:hover {
     color: white; }
+
+.btn-secondary {
+  color: #5A43E0;
+  border: 2px solid #5A43E0;
+  background-color: white;
+  font-weight: bold; }
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #4231A3; }
+
+.description {
+  font-size: 16px; }
 
 .navbar-main {
   display: flex;
-  width: 80%;
+  width: 100%;
   position: fixed;
   padding: 20px 0px 20px 0px;
-  height: 100px;
-  font-family: "Montserrat", sans-serif; }
+  height: 80px;
+  font-family: "Montserrat", sans-serif;
+  border-bottom: 1px solid #DBD5E8;
+  padding-left: 9%;
+  padding-right: 9%;
+  background-color: white;
+  z-index: 2; }
   .navbar-main .navbar-items {
     list-style: none;
     margin-left: auto;
     display: flex; }
     .navbar-main .navbar-items .navbar-item {
       margin: 0px 20px 0px 20px;
-      line-height: 50px;
+      line-height: 40px;
       text-transform: capitalize; }
+
+.home {
+  transform: translateY(100px);
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .home .home-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    width: 30% !important; }
+  .home .home-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .home .home-img img {
+      margin-right: auto;
+      width: 650px;
+      height: auto; }
+  .home .home-btn {
+    margin: 20px 20px 5px 0px; }
+
+.fourRects {
+  transform: translateY(130px);
+  height: 300px;
+  background-color: #DBD5E8; }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  color: #191919; }
+
+.container {
+  padding: 0 !important; }
