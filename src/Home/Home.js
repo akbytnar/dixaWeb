@@ -12,21 +12,21 @@ export default class Home extends React.Component {
 
     return(
       <section className="home">
-        <div className="home-wrapper">
-        <div className="home-text">
+        <div className="left-wrapper">
+        <div className="text">
           <p className="description">CUSTOMER SERVICE SOFTWARE</p>
           <h1>Customer Chaos Solved</h1>
           <p className="description">Eliminate the chaos caused
           by using separate systems. Create
           one unified customer experience
           on email, chat & phone.</p>
-          <div className="home-buttons">
+          <div className="buttons">
           <button className="btn btn-main home-btn">Try for free</button>
           <button className="btn btn-secondary home-btn">Book demo</button>
           </div>
         </div>
         </div>
-        <div className="home-img">
+        <div className="right-wrapper">
           <img src={homeIllustration} />
         </div>
       </section>
