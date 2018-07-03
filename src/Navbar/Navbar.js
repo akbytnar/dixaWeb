@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import dixaLogo from '../Images/Icons/horizontal_logo_primary.png';
-// require ('./navbar.scss');
 
 export default class Navbar extends React.Component {
 
@@ -25,7 +24,7 @@ export default class Navbar extends React.Component {
 
         <ul className="navbar-items">
           {navItems}
-          <li className="navbar-item"><button className="btn">Try for free</button></li>
+          <li className="navbar-item"><button className="btn btn-main">Try for free</button></li>
         </ul>
       </nav>
     )

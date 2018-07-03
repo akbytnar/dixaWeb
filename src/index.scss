@@ -1,9 +1,16 @@
 @import "./styles/partials.scss";
 @import "./styles/App.scss";
 @import "./Navbar/navbar.scss";
+@import "./Home/home.scss";
+@import "./FourRects/fourRects.scss";
 
 body {
   margin: 0;
   padding: 0;
   font-family: $font-primary;
+  color: $color-dixa-black;
+}
+
+.container {
+  padding: 0 !important;
 }

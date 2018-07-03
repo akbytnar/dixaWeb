@@ -1,0 +1,30 @@
+.home {
+  transform: translateY(100px);
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .home-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    width: 30% !important;
+    .home-text {
+    }
+  }
+  .home-img {
+    // width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    img {
+      margin-right: auto;
+      width: 650px;
+      height: auto;
+    }
+  }
+  .home-btn {
+    margin: 20px 20px 5px 0px;
+  }
+}

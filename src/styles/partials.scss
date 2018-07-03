@@ -14,17 +14,39 @@ $font-headers: 'Montserrat', sans-serif;
 $font-long-texts: 'Vollkorn', serif;
 
 .icon-big {
-  width: 100px;
+  width: 80px;
   height: auto;
 }
 
 //BUTTONS
 .btn {
-  color: white;
-  background: $gradient-dixa-main;
   border-radius: 20px;
-  padding: 5px 25px 5px 25px;
-  :hover {
+  padding: 7px 27px 7px 27px;
+}
+
+.btn-main {
+  color: white;
+  // background-color: $color-dixa-blue;
+  background: $gradient-dixa-main;
+  &:hover {
     color: white;
   }
+}
+
+.btn-secondary {
+  color: $color-dixa-blue;
+  border: 2px solid $color-dixa-blue;
+  background-color: white;
+  font-weight: bold;
+}
+
+//HEADERS
+h1 {
+  font-family: $font-headers;
+  color: $color-dixa-very-blue;
+}
+
+//TEXTS
+.description {
+  font-size: 16px;
 }
