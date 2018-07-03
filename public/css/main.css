@@ -1,0 +1,44 @@
+.icon-big {
+  width: 100px;
+  height: auto; }
+
+.btn {
+  color: white;
+  background: linear-gradient(45deg, #4398FF, #7A38FF);
+  border-radius: 20px;
+  padding: 5px 25px 5px 25px; }
+  .btn :hover {
+    color: white; }
+
+.icon-big {
+  width: 100px;
+  height: auto; }
+
+.btn {
+  color: white;
+  background: linear-gradient(45deg, #4398FF, #7A38FF);
+  border-radius: 20px;
+  padding: 5px 25px 5px 25px; }
+  .btn :hover {
+    color: white; }
+
+.navbar-main {
+  display: flex;
+  width: 80%;
+  position: fixed;
+  padding: 20px 0px 20px 0px;
+  height: 100px;
+  font-family: "Montserrat", sans-serif; }
+  .navbar-main .navbar-items {
+    list-style: none;
+    margin-left: auto;
+    display: flex; }
+    .navbar-main .navbar-items .navbar-item {
+      margin: 0px 20px 0px 20px;
+      line-height: 50px;
+      text-transform: capitalize; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif; }

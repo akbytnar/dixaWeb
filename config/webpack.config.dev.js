@@ -16,7 +16,7 @@ const paths = require('./paths');
 // In development, we always serve from the root. This makes config easier.
 const publicPath = '/';
 // `publicUrl` is just like `publicPath`, but we will provide it to our app
-// as %PUBLIC_URL% in `index.html` and `process.env.PUBLIC_URL` in JavaScript.
+// as %PUBLIC_URL% in `indezx.html` and `process.env.PUBLIC_URL` in JavaScript.
 // Omit trailing slash as %PUBLIC_PATH%/xyz looks better than %PUBLIC_PATH%xyz.
 const publicUrl = '';
 // Get environment variables to inject into our app.
@@ -131,17 +131,22 @@ module.exports = {
           // smaller than specified limit in bytes as data URLs to avoid requests.
           // A missing `test` is equivalent to a match.
           {
+            test: /\.scss$/,
+            include: paths.appSrc,
+            loaders: [require.resolve('style-loader'), require.resolve('css-loader'), require.resolve('sass-loader')]
+          },
+          // {
+          //   test: /\.sass$/,
+          //   include: paths.appSrc,
+          //   loaders: ["style", "css", "sass"]
+          // },
+          {
             test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
             loader: require.resolve('url-loader'),
             options: {
               limit: 10000,
               name: 'static/media/[name].[hash:8].[ext]',
             },
-          },
-          {
-            test: /\.scss$/,
-            include: paths.appSrc,
-            loaders: [require.resolve('style-loader'), require.resolve('css-loader'), require.resolve('sass-loader')]
           },
           // Process JS with Babel.
           {
@@ -200,10 +205,10 @@ module.exports = {
           // that fall through the other loaders.
           {
             // Exclude `js` files to keep "css" loader working as it injects
-            // its runtime that would otherwise processed through "file" loader.
+            // it's runtime that would otherwise processed through "file" loader.
             // Also exclude `html` and `json` extensions so they get processed
             // by webpacks internal loaders.
-            exclude: [/\.(js|jsx|mjs)$/, /\.html$/, /\.json$/],
+            exclude: [/\.js$/, /\.html$/, /\.json$/, /\.sass$/, /\.scss$/],
             loader: require.resolve('file-loader'),
             options: {
               name: 'static/media/[name].[hash:8].[ext]',

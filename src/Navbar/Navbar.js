@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import dixaLogo from '../Images/Icons/horizontal_logo_primary.png';
-require ('./navbar.scss');
+// require ('./navbar.scss');
 
 export default class Navbar extends React.Component {
 
