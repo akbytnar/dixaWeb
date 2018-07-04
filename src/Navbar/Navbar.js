@@ -10,10 +10,10 @@ export default class Navbar extends React.Component {
 
   render() {
 
-    let navItemsArray = ["Solutions", "Pricing", "Features", "Log in", "More"]
+    let navItemsArray = ["SOLUTIONS", "PRICING", "FEATURES", "LOG IN", "MORE"]
     console.log(navItemsArray)
     let navItems = navItemsArray.map((item, i) => {
-      return <li key={i} className="navbar-item">{item}</li>
+      return <li key={i} className="navbar-item"><a href="" className="navbar-link">{item}</a></li>
     })
 
     return(
