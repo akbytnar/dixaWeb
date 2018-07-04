@@ -110,25 +110,40 @@ h1, h2, h3, h4, h5 {
 
 .home {
   transform: translateY(100px);
-  height: 600px;
+  height: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
-  .home .left-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex: 1; }
-  .home .right-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-    .home .right-wrapper img {
-      margin-right: auto;
-      width: 650px;
-      height: auto; }
-  .home .home-btn {
-    margin: 20px 20px 5px 0px; }
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .home {
+    flex-direction: column; }
+  #home-illustration {
+    width: 500px;
+    text-align: center; }
+  .left-wrapper {
+    margin: 0px 50px 0px 50px;
+    text-align: center; }
+  .right-wrapper {
+    display: none !important; } }
+
+.left-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1; }
+
+.right-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .right-wrapper img {
+    margin-right: auto;
+    width: 650px;
+    height: auto; }
+
+.home-btn {
+  margin: 20px 20px 5px 0px; }
 
 .fourRects {
   transform: translateY(130px);
