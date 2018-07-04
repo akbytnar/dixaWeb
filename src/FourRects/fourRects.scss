@@ -1,5 +1,21 @@
-.fourRects {
+.four-rects {
+  margin-top: 50px;
+  margin-bottom: 50px;
   transform: translateY(130px);
-  height: 100px;
+  height: auto;
   background-color: white;
+  margin-left: 9%;
+  margin-right: 9%;
+  .rect-container {
+    display: flex;
+    flex-dflow: row wrap;
+  }
+  .rect-item {
+    flex: 1;
+    text-align: center;
+  }
+  .rect-img {
+    width: 250px;
+    height: auto;
+  }
 }

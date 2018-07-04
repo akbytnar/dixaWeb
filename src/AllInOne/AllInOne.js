@@ -21,7 +21,7 @@ export default class AllInOne extends React.Component {
     let mapItems = elements.map((elem, i) => {
       return (
         <div key={i} className="item">
-        <img src={elem.img} className="imgSmall"/>
+        <img src={elem.img} className="img-small"/>
         <h3>{elem.title}</h3>
         <p className="description">{elem.description}</p>
         <a href="" className="link">Learn more</a>

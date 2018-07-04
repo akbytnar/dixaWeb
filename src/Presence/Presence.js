@@ -31,7 +31,7 @@ export default class Presence extends React.Component {
         </div>
         </div>
         <div className="right-wrapper">
-          <img src={presenceIllustration} />
+          <img src={presenceIllustration} className="wrappedImg"/>
         </div>
       </section>
     )

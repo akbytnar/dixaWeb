@@ -1,8 +1,8 @@
 .allInOne {
   background-color: $color-dixa-light;
-  height: 500px;
+  height: auto;
   transform: translateY(130px);
-  padding-top: 90px;
+  padding: 50px 0px 50px 0px;
   .allInOne-items {
     display: flex;
     .item {

@@ -13,7 +13,7 @@ export default class Priority extends React.Component {
     return(
       <section className="home priority">
       <div className="right-wrapper">
-        <img src={priorityIllustration}/>
+        <img src={priorityIllustration} className="wrappedImg"/>
       </div>
         <div className="left-wrapper">
         <div className="text">

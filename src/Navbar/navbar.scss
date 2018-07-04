@@ -23,11 +23,16 @@
   .navbar-items {
     list-style: none;
     margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 0;
     display: flex;
     .navbar-item {
-      // margin: 0px 20px 0px 20px;
-      // line-height: 20px;
+      margin: 0px 20px 0px 20px;
+      padding: 10px 0px 10px 0px;
       text-transform: capitalize;
+      &:last-child {
+        padding: 0;
+      }
     }
   }
 }

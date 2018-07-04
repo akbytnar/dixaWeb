@@ -29,7 +29,7 @@ export default class Personalization extends React.Component {
         </div>
         </div>
         <div className="right-wrapper">
-          <img src={personalizationIllustration} id="personalizationImg" />
+          <img src={personalizationIllustration} id="personalizationImg" className="wrappedImg"/>
         </div>
       </section>
     )
