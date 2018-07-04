@@ -1,12 +1,19 @@
 {
-  "main.js": "static/js/main.6ba087f1.js",
-  "main.js.map": "static/js/main.6ba087f1.js.map",
+  "main.js": "static/js/main.2de99307.js",
+  "main.js.map": "static/js/main.2de99307.js.map",
   "static/media/art-global_something.png": "static/media/art-global_something.651e4f6b.png",
   "static/media/art-hero.png": "static/media/art-hero.03c7fbba.png",
   "static/media/art-inteligent_routing.png": "static/media/art-inteligent_routing.16cbcea2.png",
   "static/media/art-smooth_setup.png": "static/media/art-smooth_setup.16e066c2.png",
   "static/media/fb.png": "static/media/fb.d052e877.png",
+  "static/media/in.png": "static/media/in.e6ab7234.png",
   "static/media/product1.png": "static/media/product1.1a6596c1.png",
+  "static/media/product2.png": "static/media/product2.d9ad9bcb.png",
+  "static/media/product3.png": "static/media/product3.18f7c688.png",
+  "static/media/product4.png": "static/media/product4.ec727dce.png",
+  "static/media/product5.png": "static/media/product5.a79b1246.png",
   "static/media/product6.png": "static/media/product6.7b28b23b.png",
-  "static/media/product7.png": "static/media/product7.48b0ff37.png"
+  "static/media/product7.png": "static/media/product7.48b0ff37.png",
+  "static/media/twitter.png": "static/media/twitter.71230a78.png",
+  "static/media/yt.png": "static/media/yt.78e3f993.png"
 }
