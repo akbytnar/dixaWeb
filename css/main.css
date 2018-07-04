@@ -85,6 +85,7 @@ h1, h2, h3, h4, h5 {
   font-size: 16px; }
 
 .navbar-main {
+  box-sizing: border-box;
   display: flex;
   width: 100%;
   position: fixed;
@@ -104,8 +105,6 @@ h1, h2, h3, h4, h5 {
     margin-left: auto;
     display: flex; }
     .navbar-main .navbar-items .navbar-item {
-      margin: 0px 20px 0px 20px;
-      line-height: 40px;
       text-transform: capitalize; }
 
 .home {
@@ -210,4 +209,6 @@ body {
   color: #191919; }
 
 .container {
+  margin-left: 9%;
+  margin-right: 9%;
   padding: 0 !important; }
