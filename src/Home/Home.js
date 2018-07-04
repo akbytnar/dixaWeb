@@ -27,7 +27,7 @@ export default class Home extends React.Component {
         </div>
         </div>
         <div className="right-wrapper">
-          <img src={homeIllustration} />
+          <img src={homeIllustration} id="home-illustration"/>
         </div>
       </section>
     )
