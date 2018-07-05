@@ -16,8 +16,8 @@ export default class Home extends React.Component {
           one unified customer experience
           on email, chat & phone.</p>
           <div className="buttons">
-          <button className="btn btn-main home-btn">Try for free</button>
-          <button className="btn btn-secondary home-btn">Book demo</button>
+          <button className="btn btn-main home-btn hvr-bob">Try for free</button>
+          <button className="btn btn-secondary home-btn hvr-bob">Book demo</button>
           </div>
         </div>
         </div>

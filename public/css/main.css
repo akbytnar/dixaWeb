@@ -60,6 +60,62 @@ h1 {
 .description {
   font-size: 16px; }
 
+/* Bob from hover.css */
+@-webkit-keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px); }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px); }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px); } }
+
+@keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px); }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px); }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px); } }
+
+@-webkit-keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px); } }
+
+@keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px); } }
+
+.hvr-bob {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0); }
+
+.hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
+  -webkit-animation-name: hvr-bob-float, hvr-bob;
+  animation-name: hvr-bob-float, hvr-bob;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate; }
+
 .icon-big {
   width: 80px;
   height: auto; }
@@ -121,6 +177,62 @@ h1 {
 
 .description {
   font-size: 16px; }
+
+/* Bob from hover.css */
+@-webkit-keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px); }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px); }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px); } }
+
+@keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px); }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px); }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px); } }
+
+@-webkit-keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px); } }
+
+@keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px); } }
+
+.hvr-bob {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0); }
+
+.hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
+  -webkit-animation-name: hvr-bob-float, hvr-bob;
+  animation-name: hvr-bob-float, hvr-bob;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate; }
 
 .navbar-main {
   box-sizing: border-box;
@@ -288,22 +400,22 @@ h1 {
       flex: 1; }
       .footer .footer-header-items .footer-header-item .footer-input {
         height: 40px;
-        width: 70%;
+        width: 80%;
         background-color: #FCFCFC;
         border: 3px solid #DBD5E8;
         border-radius: 5px;
-        box-sizing: border-box; }
+        box-sizing: border-box;
+        margin: 0;
+        display: flex; }
         .footer .footer-header-items .footer-header-item .footer-input input {
-          margin-ledt: 20px;
+          margin-left: 10px;
           position: relative;
           height: 32px;
-          width: 60%;
+          flex: 1;
           transform: translatey(-50%);
           top: 50%;
-          border: none; }
-          .footer .footer-header-items .footer-header-item .footer-input input:placeholder {
-            padding-left: 20px !important;
-            font-size: 12px; }
+          border: none;
+          width: 30%; }
   .footer .footer-newsletter {
     flex-direction: column;
     align-self: flex-start;
@@ -356,7 +468,8 @@ h1 {
   height: 30px;
   transform: translateY(3px);
   margin: 0 auto;
-  width: 39%; }
+  flex: 1;
+  border-left: 3px solid #DBD5E8; }
 
 @media (min-width: 481px) and (max-width: 767px) {
   .footer .footer-header-items {

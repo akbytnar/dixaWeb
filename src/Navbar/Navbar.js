@@ -30,7 +30,7 @@ export default class Navbar extends React.Component {
         <ul className="navbar-items">
           <div className="navbar-text-items">{navItems}</div>
           <img src={hamburger} className="icon-super-small" id="hamburger"/>
-          <li className="navbar-item"><button className="btn btn-main">Try for free</button></li>
+          <li className="navbar-item"><button className="btn btn-main hvr-bob">Try for free</button></li>
         </ul>
       </nav>
     )
