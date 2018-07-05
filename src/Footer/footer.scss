@@ -13,23 +13,22 @@
       flex: 1;
       .footer-input {
         height: 40px;
-        width: 70%;
+        width: 80%;
         background-color: $color-dixa-baby-powder;
         border: 3px solid $color-dixa-grey;
         border-radius: 5px;
         box-sizing: border-box;
+        margin: 0;
+        display: flex;
         input {
-          margin-ledt: 20px;
+          margin-left: 10px;
           position: relative;
           height: 32px;
-          width: 60%;
+          flex: 1;
           transform: translatey(-50%);
           top: 50%;
           border: none;
-          &:placeholder {
-            padding-left: 20px !important;
-            font-size: 12px;
-          }
+          width: 30%;
         }
       }
     }
@@ -107,7 +106,8 @@
   height: 30px;
   transform: translateY(3px);
   margin: 0 auto;
-  width: 39%;
+  flex: 1;
+  border-left: 3px solid $color-dixa-grey;
 }
 
 @mixin responsiveFooter() {
