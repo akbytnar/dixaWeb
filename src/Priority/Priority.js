@@ -1,19 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import priorityIllustration from "../Images/Illustrations/product6.png";
 
 export default class Priority extends React.Component {
-
-  constructor() {
-    super();
-
-  }
 
   render() {
 
     return(
       <section className="home priority">
       <div className="priority-left-wrapper left-wrapper">
-        <img src={priorityIllustration} className="wrapped-img"/>
+        <img src={priorityIllustration} className="wrapped-img" alt="Priority"/>
       </div>
         <div className="priority-right-wrapper right-wrapper">
         <div className="text">

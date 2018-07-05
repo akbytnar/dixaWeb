@@ -72,6 +72,24 @@
   }
 }
 
+.footer-last-elem {
+  border-top: 1px solid $color-dixa-baby-powder;
+  .footer-nav-items {
+    list-style: none;
+    display: flex;
+    margin: 0px 20% 0px 20%;
+    padding: 20px 0px 20px 0px;
+    flex-direction: row;
+    .footer-nav-item {
+      flex: 1;
+      .footer-nav-link {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
 #footer-header-title {
   color: white;
   font-weight: bold;

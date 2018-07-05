@@ -1,11 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 export default class Try extends React.Component {
-
-  constructor() {
-    super();
-
-  }
 
   render() {
 

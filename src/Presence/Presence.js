@@ -1,12 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import presenceIllustration from "../Images/Illustrations/product1.png";
 
 export default class Presence extends React.Component {
 
-  constructor() {
-    super();
-
-  }
 
   render() {
 
@@ -31,7 +27,7 @@ export default class Presence extends React.Component {
         </div>
         </div>
         <div className="presence-right-wrapper right-wrapper">
-          <img src={presenceIllustration} className="wrapped-img"/>
+          <img src={presenceIllustration} className="wrapped-img" alt="Presence"/>
         </div>
       </section>
     )

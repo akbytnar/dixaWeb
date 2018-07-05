@@ -1,12 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import personalizationIllustration from "../Images/Illustrations/product7.png";
 
 export default class Personalization extends React.Component {
-
-  constructor() {
-    super();
-
-  }
 
   render() {
 
@@ -29,7 +24,7 @@ export default class Personalization extends React.Component {
         </div>
         </div>
         <div className="presence-right-wrapper right-wrapper">
-          <img src={personalizationIllustration} id="personalizationImg" className="wrapped-img"/>
+          <img src={personalizationIllustration} id="personalizationImg" className="wrapped-img" alt="Personalization"/>
         </div>
       </section>
     )
