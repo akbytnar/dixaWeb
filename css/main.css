@@ -18,6 +18,7 @@ button {
   border: none; }
 
 .btn {
+  min-width: 140px;
   border-radius: 25px;
   font-size: 14px;
   padding: 12px 32px 12px 32px;
@@ -75,6 +76,7 @@ button {
   border: none; }
 
 .btn {
+  min-width: 140px;
   border-radius: 25px;
   font-size: 14px;
   padding: 12px 32px 12px 32px;
@@ -152,20 +154,6 @@ h1 {
   justify-content: space-between;
   padding: 20px 0px 20px 0px; }
 
-@media (min-width: 768px) and (max-width: 1023px) {
-  #home-illustration {
-    width: 500px !important;
-    text-align: center; } }
-
-@media (min-width: 481px) and (max-width: 767px) {
-  .home {
-    flex-direction: column; }
-  .left-wrapper {
-    margin: 0px 50px 0px 50px;
-    text-align: center; }
-  .right-wrapper {
-    display: none !important; } }
-
 .left-wrapper {
   display: flex;
   flex-direction: column;
@@ -181,11 +169,41 @@ h1 {
 
 .wrapped-img {
   margin-right: auto;
-  width: 650px;
+  max-width: 650px;
   height: auto; }
 
 .home-btn {
   margin: 20px 20px 5px 0px; }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  #home-illustration {
+    width: 500px !important;
+    text-align: center;
+    margin: 30px 0px 0px 0px; }
+  .home {
+    flex-direction: column; }
+    .home .left-wrapper {
+      margin: 0px 50px 0px 50px;
+      text-align: center; }
+    .home .right-wrapper {
+      margin: 0 auto;
+      text-align: center; } }
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .home {
+    flex-direction: column; }
+  .left-wrapper {
+    text-align: center; }
+  .home-right-wrapper {
+    display: none !important; } }
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .home {
+    flex-direction: column; }
+  .left-wrapper {
+    text-align: center; }
+  .home-right-wrapper {
+    display: none !important; } }
 
 .four-rects {
   margin-top: 50px;
@@ -197,13 +215,23 @@ h1 {
   margin-right: 9%; }
   .four-rects .rect-container {
     display: flex;
-    flex-dflow: row wrap; }
+    flex-flow: row wrap; }
   .four-rects .rect-item {
     flex: 1;
     text-align: center; }
   .four-rects .rect-img {
-    width: 300px;
+    width: 280px;
     height: auto; }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .four-rects {
+    margin-top: 10px; }
+  .rec-container {
+    flex-direction: column; } }
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .four-rects {
+    display: none; } }
 
 .footer {
   height: auto;
@@ -288,10 +316,42 @@ h1 {
       text-align: center;
       padding: 0px 30px 0px 30px; }
 
+@media (min-width: 481px) and (max-width: 767px) {
+  .allInOne {
+    padding-top: 10px; }
+    .allInOne .allInOne-items {
+      flex-direction: column; }
+      .allInOne .allInOne-items .item {
+        margin-top: 30px; }
+      .allInOne .allInOne-items .img-small {
+        width: 170px; } }
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .allInOne {
+    padding-top: 10px; }
+    .allInOne .allInOne-items {
+      flex-direction: column; }
+      .allInOne .allInOne-items .item {
+        margin-top: 30px; }
+      .allInOne .allInOne-items .img-small {
+        width: 150px; } }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .allInOne-items .img-small {
+    width: 170px; } }
+
 .presence {
   height: auto;
   padding: 100px 0px 100px 0px;
   transform: translateY(130px); }
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .presence-right-wrapper {
+    display: none !important; } }
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .presence-right-wrapper {
+    display: none !important; } }
 
 .priority {
   height: auto;
@@ -300,6 +360,18 @@ h1 {
 
 #priorityImg {
   width: 400px; }
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .priority-left-wrapper {
+    display: none !important; }
+  .priority-right-wrapper {
+    text-align: center; } }
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .priority-left-wrapper {
+    display: none !important; }
+  .priority-right-wrapper {
+    text-align: center; } }
 
 .personalization {
   height: auto;
@@ -319,11 +391,13 @@ h1 {
   .try .btn-try {
     margin: 20px 10px 10px 10px; }
 
-body {
+html, body {
   margin: 0;
   padding: 0;
   font-family: "Open Sans", sans-serif;
-  color: #191919; }
+  color: #191919;
+  width: 100%;
+  overflow-x: hidden; }
 
 .container {
   margin-left: 9%;
