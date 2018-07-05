@@ -18,7 +18,7 @@ export default class Footer extends React.Component {
 
     let footerLinks = footerLinksArray.map((elem, i) => {
       return (
-        <div className="footer-item-row">
+        <div className="footer-item-row" key={i}>
           <a href="" className="footer-link">
             <img src={elem.img} className="icon-super-small footer-link-icon" alt={elem.name}/>
             <span className="link-desc">{elem.name}</span>
@@ -31,7 +31,7 @@ export default class Footer extends React.Component {
 
     let otherLinks = otherLinksArray.map((elem, i) => {
       return (
-        <div className="footer-item-row">
+        <div className="footer-item-row" key={i}>
           <a href="" className="footer-other-link">
             <span className="link-desc">{elem}</span>
           </a>
@@ -49,7 +49,7 @@ export default class Footer extends React.Component {
     return(
       <footer className="footer">
       <div className="container">
-        <div className="footer-header-items">
+        <div className="footer-header-items footer-title">
           <div className="footer-header-item">
             <img src={logo} className="icon-big" alt="Dixa Logo"/>
           </div>

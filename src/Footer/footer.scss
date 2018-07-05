@@ -109,3 +109,41 @@
   margin: 0 auto;
   width: 39%;
 }
+
+@mixin responsiveFooter() {
+  .footer {
+    .footer-header-items {
+      flex-direction: column;
+    }
+    .footer-title {
+      display: none;
+    }
+    .footer-item-row {
+      .footer-link {
+        .footer-link-icon {
+          margin: 0;
+        }
+      }
+      &:last-child {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .footer-last-elem {
+    .footer-nav-items {
+      margin: 0px 2% 0px 9%;
+      .footer-nav-item {
+        margin-right: 15px;
+      }
+    }
+  }
+
+}
+
+@media #{$tablet-small} {
+  @include responsiveFooter();
+}
+
+@media #{$phone} {
+  @include responsiveFooter();
+}

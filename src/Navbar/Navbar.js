@@ -1,13 +1,13 @@
 import React from 'react';
 import dixaLogo from '../Images/Icons/horizontal_logo_primary.png';
 import arrowDown from "../Images/Icons/angle-down.svg";
+import hamburger from "../Images/Icons/menu.png"
 
 export default class Navbar extends React.Component {
 
   render() {
 
     let navItemsArray = ["SOLUTIONS", "PRICING", "FEATURES", "LOG IN", "MORE"]
-    console.log(navItemsArray)
     let navItems = navItemsArray.map((item, i) => {
       if (item === "SOLUTIONS" || item==="MORE") {
         return (
@@ -28,7 +28,8 @@ export default class Navbar extends React.Component {
         </a>
 
         <ul className="navbar-items">
-          {navItems}
+          <div className="navbar-text-items">{navItems}</div>
+          <img src={hamburger} className="icon-super-small" id="hamburger"/>
           <li className="navbar-item"><button className="btn btn-main">Try for free</button></li>
         </ul>
       </nav>

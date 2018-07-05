@@ -10,7 +10,7 @@ export default class FourRects extends React.Component {
 
     let rectArray = [rect1, rect2, rect3, rect4]
     let rectItems = rectArray.map((rect, i) => {
-      return <div className="rect-item"><img key={i} src={rect} className="rect-img" alt="Rectangle"/></div>
+      return <div className="rect-item" key={i}><img src={rect} className="rect-img" alt="Rectangle"/></div>
     })
 
     return(
