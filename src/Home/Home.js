@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import homeIllustration from "../Images/Illustrations/art-hero.png";
+import homeIllustration from "../Images/Illustrations/art-hero_copy.png";
 
 export default class Home extends React.Component {
 
@@ -26,7 +26,7 @@ export default class Home extends React.Component {
           </div>
         </div>
         </div>
-        <div className="right-wrapper">
+        <div className="home-right-wrapper right-wrapper">
           <img src={homeIllustration} id="home-illustration" className="wrapped-img"/>
         </div>
       </section>

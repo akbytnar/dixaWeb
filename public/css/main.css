@@ -11,8 +11,10 @@
   height: auto; }
 
 .img-small {
-  width: 200px;
-  height: auto; }
+  /* max-width: 200px; */
+  width: 50%;
+  height: auto;
+}
 
 button {
   border: none; }
@@ -210,6 +212,7 @@ h1 {
   background: linear-gradient(45deg, #4398FF, #7A38FF);
   padding-top: 30px;
   color: white;
+  transform: translateY(130px);
   position: relative; }
   .footer .footer-header-items {
     display: flex;

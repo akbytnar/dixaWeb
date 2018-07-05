@@ -3,3 +3,17 @@
   padding: 100px 0px 100px 0px;
   transform: translateY(130px);
 }
+
+@mixin hideImg() {
+  .presence-right-wrapper {
+    display: none !important;
+  }
+}
+
+@media #{$tablet-small} {
+  @include hideImg();
+}
+
+@media #{$phone} {
+  @include hideImg();
+}

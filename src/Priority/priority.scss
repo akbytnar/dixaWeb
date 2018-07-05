@@ -7,3 +7,20 @@
 #priorityImg {
   width: 400px;
 }
+
+@mixin hideImgAndCenter() {
+  .priority-left-wrapper {
+    display: none !important;
+  }
+  .priority-right-wrapper {
+    text-align: center;
+  }
+}
+
+@media #{$tablet-small} {
+  @include hideImgAndCenter();
+}
+
+@media #{$phone} {
+  @include hideImgAndCenter();
+}

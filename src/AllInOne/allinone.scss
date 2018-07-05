@@ -12,3 +12,34 @@
     }
   }
 }
+
+@mixin displayAsColumns($imgWidth) {
+  .allInOne {
+    padding-top: 10px;
+    .allInOne-items {
+      flex-direction: column;
+      .item {
+        margin-top: 30px;
+      }
+      .img-small {
+        width: $imgWidth;
+      }
+    }
+  }
+}
+
+@media #{$tablet-small} {
+  @include displayAsColumns(170px);
+}
+
+@media #{$phone} {
+  @include displayAsColumns(150px);
+}
+
+@media #{$tablet} {
+  .allInOne-items {
+    .img-small {
+      width: 170px;
+    }
+  }
+}

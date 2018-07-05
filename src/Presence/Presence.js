@@ -30,7 +30,7 @@ export default class Presence extends React.Component {
           <a className="link" href="">Learn more about email</a>
         </div>
         </div>
-        <div className="right-wrapper">
+        <div className="presence-right-wrapper right-wrapper">
           <img src={presenceIllustration} className="wrapped-img"/>
         </div>
       </section>

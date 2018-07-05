@@ -8,14 +8,29 @@
   margin-right: 9%;
   .rect-container {
     display: flex;
-    flex-dflow: row wrap;
+    flex-flow: row wrap;
   }
   .rect-item {
     flex: 1;
     text-align: center;
   }
   .rect-img {
-    width: 300px;
+    width: 280px;
     height: auto;
+  }
+}
+
+@media #{$tablet} {
+  .four-rects {
+    margin-top: 10px;
+  }
+  .rec-container {
+    flex-direction: column;
+  }
+}
+
+@media #{$phone} {
+  .four-rects {
+    display: none;
   }
 }

@@ -10,12 +10,13 @@
 @import "./Personalization/personalization.scss";
 @import "./Try/try.scss";
 
-body {
+html, body {
   margin: 0;
   padding: 0;
   font-family: $font-primary;
   color: $color-dixa-black;
-  // width: 100%;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .container {

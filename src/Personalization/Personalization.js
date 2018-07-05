@@ -28,7 +28,7 @@ export default class Personalization extends React.Component {
           <a className="link" href="">Learn more about integrations</a>
         </div>
         </div>
-        <div className="right-wrapper">
+        <div className="presence-right-wrapper right-wrapper">
           <img src={personalizationIllustration} id="personalizationImg" className="wrapped-img"/>
         </div>
       </section>

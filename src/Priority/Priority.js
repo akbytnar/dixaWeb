@@ -12,10 +12,10 @@ export default class Priority extends React.Component {
 
     return(
       <section className="home priority">
-      <div className="left-wrapper">
+      <div className="priority-left-wrapper left-wrapper">
         <img src={priorityIllustration} className="wrapped-img"/>
       </div>
-        <div className="right-wrapper">
+        <div className="priority-right-wrapper right-wrapper">
         <div className="text">
           <p className="description">PRIORITY</p>
           <h1>Prioritize intelligently.</h1>
